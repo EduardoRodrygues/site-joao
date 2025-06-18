@@ -73,7 +73,7 @@ const musicas = [
   },
    {
     titulo: "Um girassol da cor do seu cabelo",
-    arquivo: "musicas/musica4.mp3",
+    arquivo: "musicas/musica9.mp3",
     capa: "img/capa4.png"
   },
    {
