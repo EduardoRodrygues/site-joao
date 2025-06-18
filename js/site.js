@@ -82,7 +82,7 @@ const musicas = [
     capa: "img/capa5.png"
   },
    {
-    titulo: "cima do Sol",
+    titulo: "Acima do Sol",
     arquivo: "musicas/musica6.mp3",
     capa: "img/capa6.png"
   },
