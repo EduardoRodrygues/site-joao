@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz 6 meses</title> <!--Mudar: Nome do casal -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Feliz 6 meses Meu Amor ❤</h1> <!--Mudar: Nome do(a) Namorado(a) -->
+  </header>
+
+  <section>
+    <div class="item">
+
+      <div class="image-container">
+        <img src="img/img1.png" alt="Imagem 1" class="image active" />
+        <img src="img/img2.png" alt="Imagem 2" class="image" />
+        <img src="img/img3.png" alt="Imagem 3" class="image" />
+        <img src="img/img4.png" alt="Imagem 4" class="image" />
+        <img src="img/img5.png" alt="Imagem 5" class="image" />
+        <img src="img/img6.png" alt="Imagem 6" class="image" />
+      </div>
+
+      <div class="player">
+        <div class="album-cover">
+          <img id="album-image" src="" alt="Capa do Álbum">
+        </div>
+
+        <div class="info">
+          <span id="music-title">Nome da Música</span>
+        </div>
+
+        <div class="top-bar">
+          <span id="current-time">00:00</span>
+          <input type="range" id="progress" value="0">
+          <span id="total-time">00:00</span>
+        </div>
+
+        <div class="controls">
+          <button class="laterais" onclick="prevMusic()">
+            <img src="/img/left.png" alt="">
+          </button>
+
+          <button class="play-button" onclick="togglePlay()">
+            <img id="playPauseicon" src="/img/play.png" alt="">
+          </button>
+
+          <button class="laterais" onclick="nextMusic()">
+            <img src="/img/right.png" alt="">
+          </button>
+        </div>
+        <audio id="audio"></audio>
+      </div>
+
+      <div class="contador">
+        <h2>Estamos juntos há:</h2>
+        <div class="tempo">
+          <div>
+            <span class="valor" id="dias">0</span>
+            <span class="label">Dias</span>
+          </div>
+          <div>
+            <span class="valor" id="horas">0</span>
+            <span class="label">Horas</span>
+          </div>
+          <div>
+            <span class="valor" id="minutos">0</span>
+            <span class="label">Minutos</span>
+          </div>
+          <div>
+            <span class="valor" id="segundos">0</span>
+            <span class="label">Segundos</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="cartinhas">
+        <button id="mostrar-cartinhas">Cartinha</button>
+         <div id="cartinha-conteudo"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/site.js"></script>
+  <script src="js/cartinha.js"></script>
+</body>
+</html>

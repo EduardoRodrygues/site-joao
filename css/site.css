@@ -1,0 +1,337 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../img/fundo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  text-align: center;
+  padding: 0px;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #f8bbd0;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  border-radius: 15px;
+  display: none;
+}
+
+.image.active {
+  display: block;
+}
+
+#cartinhas {
+  padding-bottom: 60px; 
+}
+
+/* PLAYER DE MÚSICA */
+.player {
+  background: #f8bbd0;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  width: 270px;
+  color: #fff;
+  margin: 30px auto; 
+}
+
+.album-cover {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.album-cover img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.info span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.top-bar span {
+  font-size: 12px;
+  width: 35px;
+  text-align: center;
+}
+
+#progress {
+  flex: 1;
+  margin: 0 6px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+/* Botões laterais */
+.controls button.laterais {
+  width: 30px;
+  height: 30px;
+  background: #ff90b3;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button.laterais img {
+  width: 15px;
+  height: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.controls button.laterais:hover {
+  background: #ff4f81;
+}
+
+/* Botão central (play) */
+.controls button.play-button {
+  width: 40px;
+  height: 40px;
+  background: #ff90b3;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button.play-button img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+}
+
+.controls button.play-button:hover {
+  background: #ff4f81;
+}
+
+
+/*TEMPO DE NAMORO*/
+.contador {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f8bbd0;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(233, 30, 99, 0.1);
+  display: inline-block;
+}
+
+.contador h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.tempo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tempo div {
+  text-align: center;
+}
+
+.tempo div span.valor {
+  display: block;
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+.tempo div span.label {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Estilo do botão de Cartinhas */
+#mostrar-cartinhas {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #f8bbd0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(136, 14, 79, 0.1);
+  margin-bottom: 20px;
+}
+
+#mostrar-cartinhas:hover {
+  background-color: #ec407a;;
+  transition: background-color 0.3s ease;
+}
+
+#cartinha-conteudo {
+  display: none;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-family: 'Great Vibes', cursive;
+  color: #333;
+  max-width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: max-content;
+  text-align: left;
+  max-width: 40%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 50px;
+    padding: 0 20px;
+  }
+
+  .image-container {
+    width: 90%;
+  }
+
+  .contador h2 {
+    font-size: 36px;
+  }
+
+  .tempo {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tempo div span.valor {
+    font-size: 28px;
+  }
+
+  .tempo div span.label {
+    font-size: 12px;
+  }
+
+  #mostrar-cartinhas {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+
+  #cartinha-conteudo {
+    padding: 20px;
+    font-size: 1.2rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) { 
+  header h1 {
+    font-size: 40px;
+  }
+
+  .contador h2 {
+    font-size: 30px;
+  }
+
+  .tempo div span.valor {
+    font-size: 24px;
+  }
+
+}
