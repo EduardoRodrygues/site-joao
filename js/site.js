@@ -59,32 +59,32 @@ const musicas = [
     {
     titulo: "You'll Never Walk Alone",
     arquivo: "musicas/musica1.mp3",
-    capa: "img/capa1.png"
+    capa: "img/capa1.webp"
   },
   {
     titulo: "Wonderwall",
     arquivo: "musicas/musica2.mp3",
-    capa: "img/capa2.png"
+    capa: "img/capa2.webp"
   },
    {
     titulo: "Linda Juventude",
     arquivo: "musicas/musica3.mp3",
-    capa: "img/capa3.png"
+    capa: "img/capa3.webp"
   },
    {
     titulo: "Um girassol da cor do seu cabelo",
     arquivo: "musicas/musica9.mp3",
-    capa: "img/capa4.png"
+    capa: "img/capa4.webp"
   },
    {
     titulo: "Vienna",
     arquivo: "musicas/musica5.mp3",
-    capa: "img/capa5.png"
+    capa: "img/capa5.webp"
   },
    {
     titulo: "Acima do Sol",
     arquivo: "musicas/musica6.mp3",
-    capa: "img/capa6.png"
+    capa: "img/capa6.webp"
   },
 ];
 
